@@ -38,7 +38,6 @@
 package com.foxelbox.luajcompiler.compiler;
 
 import org.luaj.vm2.LuaFunction;
-import org.luaj.vm2.LuaValue;
 import org.luaj.vm2.Prototype;
 import org.luaj.vm2.luajc.JavaGen;
 

@@ -70,6 +70,7 @@
                         <email>mriq91@gmail.com</email>
                     </properties>
                     <excludes>
+						<exclude>settings.xml</exclude>
                         <exclude>**/README</exclude>
                         <exclude>src/test/resources/**</exclude>
                         <exclude>src/main/resources/**</exclude>
@@ -100,9 +101,9 @@
 	</build>
 	<dependencies>
 		<dependency>
-			<groupId>com.foxelbox</groupId>
-			<artifactId>LuaJ</artifactId>
-			<version>3.0.3-SNAPSHOT</version>
+			<groupId>org.luaj</groupId>
+			<artifactId>luaj-jse</artifactId>
+			<version>3.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.codehaus.plexus</groupId>
@@ -115,4 +116,16 @@
 			<version>2.0.0</version>
 		</dependency>
 	</dependencies>
+    <repositories>
+        <repository>
+            <id>foxelbox-repo</id>
+            <url>https://maven.pkg.github.com/foxelbox/packages</url>
+        </repository>
+    </repositories>
+    <distributionManagement>
+        <repository>
+            <id>foxelbox-repo</id>
+            <url>https://maven.pkg.github.com/foxelbox/packages</url>
+        </repository>
+    </distributionManagement>
 </project>

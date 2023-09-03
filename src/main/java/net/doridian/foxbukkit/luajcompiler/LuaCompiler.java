@@ -63,7 +63,7 @@ public class LuaCompiler extends AbstractCompiler {
 
     @Override
     public String getCompilerId() {
-        return "luaj";
+        return "luac";
     }
 
     @Override
